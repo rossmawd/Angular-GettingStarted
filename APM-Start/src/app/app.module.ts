@@ -14,4 +14,9 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 
+// add products folder
+//create product-list.component.html
+//copy HTML from APM final
+
+
 
