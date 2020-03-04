@@ -1,6 +1,6 @@
 <div class='card'>
   <div class='card-header'>
-    Product List
+    {{pageTitle}}
   </div>
 
   <div class = 'card-body'>
@@ -16,8 +16,9 @@
     </div>
   </div>
 
+
   <div class='table-responsive'>
-    <table class='table'>
+    <table class='table' *ngIf='products && products.length'>
       <thead>
         <tr>
           <th>
@@ -30,10 +31,22 @@
           <th>Available</th>
           <th>Price</th>
           <th>5 Star Rating</th>
-          <!-- HERE -->
+         
         </tr>
-
       </thead>
+      <tbody>
+        
+        <tr *ngFor='let product of products'>
+          <td></td>
+          <td>{{product.productName}}</td>
+          <td>{{product.productCode}}</td>
+          <td>{{product.releaseDate}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.starRating}}</td>
+        </tr>
+        <tr *ngFor="let product of products">*ngFor is a built in Directive! </tr>
+
+      </tbody>
     </table>
   </div>
 
