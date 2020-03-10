@@ -45,7 +45,7 @@
           <td>
             <img *ngIf = 'showImage' 
              [src] = 'product.imageUrl'
-             [title] = 'product.title'
+             [title] = 'product.productName | uppercase'
              [style.width.px]='imageWidth'
              [style.margin.px] ='imageMargin'
             >
@@ -53,10 +53,10 @@
           <td>{{product.productName}}</td>
           <td>{{product.productCode}}</td>
           <td>{{product.releaseDate}}</td>
-          <td>{{product.price}}</td>
+          <td>{{product.price | currency | lowercase}}</td>
           <td>{{product.starRating}}</td>
         </tr>
-        <tr *ngFor="let product of products">*ngFor is a built in Directive! </tr>
+        <tr *ngFor="let product of products">*ngFor is a built in Directive!</tr>
 
       </tbody>
     </table>
