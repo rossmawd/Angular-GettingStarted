@@ -7,11 +7,25 @@ import {IProduct} from './product'
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  pageTitle: string = 'Poop Sticks' ;
+  pageTitle: string = 'Amazon' ;
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
-  listFilter: string = 'cart';
+  filteredProducts: IProduct[]; //declaring a new array for the filtered products
+ // listFilter: string = 'cart';
+ _listFilter: string;
+
+ get listFilter(): string {
+   return this._listFilter
+ }
+
+ set listFilter(inputValue: string) {
+   this._listFilter = inputValue;
+   //if listFilter is undefined or '', don't filter. Else, execute performFilter
+   this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
+   
+ } 
+
 
   products: IProduct[] = [
     {
@@ -67,6 +81,23 @@ export class ProductListComponent implements OnInit {
     
   ];
 
+   //filterBy is what the user has typed, the return value is a new products array
+ performFilter(filterBy: string) : IProduct[] {
+   console.log('filtering...')
+  //use toLocaleLowerCase() to lowercase filterBy
+  //use filter to return a new array of products
+  //by using indexOf to return the index of a matching sub-string: indexOf('what')
+  filterBy = filterBy.toLocaleLowerCase()
+  return this.products.filter( product =>
+   product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1)
+   //indexOf returns -1 if it cannot find the substring 'filterBy'
+  
+}
+
+constructor(){
+  this.filteredProducts =this.products
+  this.listFilter = 'cart'
+}
   ngOnInit(): void {
     console.log('In ONInit');
   }
