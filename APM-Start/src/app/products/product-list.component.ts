@@ -91,7 +91,10 @@ export class ProductListComponent implements OnInit {
   return this.products.filter( product =>
    product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1)
    //indexOf returns -1 if it cannot find the substring 'filterBy'
-  
+}
+
+onRatingClicked(event): void {
+  this.pageTitle = event
 }
 
 constructor(){

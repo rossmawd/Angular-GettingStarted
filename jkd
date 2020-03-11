@@ -1,0 +1,264 @@
+[33mcommit d71539d353a7f3b5a559064cab599b9f4295e595[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Wed Mar 11 16:51:28 2020 +0000
+
+    nested star compent using @Input decorator
+
+[33mcommit eec0237d2005fb18876bc76bd042af084ef6a64a[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Wed Mar 11 15:39:05 2020 +0000
+
+    filtering using setter and getter. Plus .filter and .indexOf
+
+[33mcommit 3b842387f81a8e8862747fc04868063f6e3ee875[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Wed Mar 11 11:49:46 2020 +0000
+
+    implementing OnInit
+
+[33mcommit dc6dfd75c896de58f3e655661294c1396988e6d5[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Wed Mar 11 11:32:27 2020 +0000
+
+    custom products type and added styles to header
+
+[33mcommit f1af9ad578f5fb9e4db0c9e952b59894753f625d[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Wed Mar 11 09:19:14 2020 +0000
+
+    added parmeters to the currency pipe
+
+[33mcommit 37b095cdaac70be964cfd8403ae45fce22094063[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Tue Mar 10 17:26:22 2020 +0000
+
+    playing with transforming data with pipes
+
+[33mcommit c0aef1b5fe1b2bfaa273c5d5ac942662a2ee4f0f[m
+Merge: 3b11062 9b07b1f
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Tue Mar 10 16:49:34 2020 +0000
+
+    Merge branch 'master' of https://github.com/rossmawd/Angular-GettingStarted
+
+[33mcommit 3b11062f2993c8c5e9b91db08bb75cafa125e83b[m
+Author: rossmawdsley <ross.mawdsley@newday.co.uk>
+Date:   Tue Mar 10 16:45:24 2020 +0000
+
+    styling for list images
+
+[33mcommit 9b07b1fc9ac9e26f2f943d516a7968a6ee7434fe[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Tue Mar 10 16:43:55 2020 +0000
+
+    added two way binding
+
+[33mcommit 19ade5ec422b397b2fc7453f541392d95b183f8c[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Wed Mar 4 17:51:55 2020 +0000
+
+    exploring built in directives like ngFor and ngIf
+
+[33mcommit f6c53aeb9f55a631de78db42c78564dbf6aa3186[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Thu Feb 20 15:33:47 2020 +0000
+
+    contructing product list template
+
+[33mcommit dd01920bcb3c2a56e2db391d33f440c381491c09[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Thu Feb 20 15:09:02 2020 +0000
+
+    adding bootstrap styling
+
+[33mcommit a30c7f6f2dc16acfa366836a2fe3728ce3839791[m
+Author: Ross Mawdsley <rossmawd@gmail.com>
+Date:   Tue Feb 18 17:44:16 2020 +0000
+
+    just getting started
+
+[33mcommit a8aadca5b7908ec153e553f25c9f6261ac83739b[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Fri Nov 22 17:26:13 2019 -0800
+
+    Update README.md
+
+[33mcommit a5e10111d6ce852f9779532469639b9d2f5c6d40[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Nov 5 00:09:46 2019 -0800
+
+    Update README.md
+
+[33mcommit 08644a956b16c5aa167a2b6c09af05689877422e[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Nov 5 00:09:21 2019 -0800
+
+    Update README.md
+
+[33mcommit 608a33ae16bbb5000b0717fc4cd23c5042da72e1[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Nov 5 00:08:23 2019 -0800
+
+    Update README.md
+
+[33mcommit d8ad6de90e5a2d16a0398a9fec42efddbe0c1173[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Thu Oct 31 12:40:10 2019 -0700
+
+    Update README.md
+
+[33mcommit 168c4b9d3a535d402e838d2a38ad04b332240f99[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Mon Oct 7 14:15:24 2019 -0700
+
+    Delete package-lock.json
+
+[33mcommit 7794b5d123700d4ea9d9725167f3cca71aa86b2f[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Mon Oct 7 14:15:03 2019 -0700
+
+    Delete package-lock.json
+
+[33mcommit 12df41e46d30fd08926fffd92e188a6ca8551e4c[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Sep 25 15:53:45 2019 -0700
+
+    Update CHANGELOG.md
+
+[33mcommit b4de226bb3df066396c1f4d2623dad7c04cb1ad2[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Sep 24 09:07:48 2019 -0700
+
+    Update README.md
+
+[33mcommit c98cbad8e850734dc173b324f38280a269d173d4[m
+Merge: 77535b8 4b21ede
+Author: Deborah Kurata <deborahk@insteptech.com>
+Date:   Thu Aug 29 13:20:46 2019 -0700
+
+    Merge branch 'master' of https://github.com/DeborahK/Angular-GettingStarted
+
+[33mcommit 77535b8d21b5b8e2268d9dc6fc17674d46df5e8e[m
+Author: Deborah Kurata <deborahk@insteptech.com>
+Date:   Thu Aug 29 13:20:40 2019 -0700
+
+    Code changes to support Stackblitz
+
+[33mcommit 4b21ede2267e09d17c74b46951d79a2745093497[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Aug 14 20:27:15 2019 -0700
+
+    Update CHANGELOG.md
+
+[33mcommit a412257306025e50a16a38082a9180a775bc91a4[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Aug 14 20:25:44 2019 -0700
+
+    Update CHANGELOG.md
+
+[33mcommit 3e3b7cbaa49e8cc187ce4b082e352e6c3fb1c031[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Aug 14 20:24:20 2019 -0700
+
+    Update CHANGELOG.md
+
+[33mcommit 447a01e98bd1af79b04d3188b5ff97ba2ce55ee6[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Aug 14 20:20:38 2019 -0700
+
+    Update README.md
+
+[33mcommit 0caff80a9ad3c8a044c4bc8eaea219cbfea5bc1e[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Aug 14 20:19:08 2019 -0700
+
+    Update README.md
+
+[33mcommit 2ff4a1eba990b0b0201b84c136660a2238517c29[m
+Merge: a4c822c d582bea
+Author: Deborah Kurata <deborahk@insteptech.com>
+Date:   Wed Aug 14 20:17:03 2019 -0700
+
+    Merge branch 'master' of https://github.com/DeborahK/Angular-GettingStarted
+
+[33mcommit a4c822c49a6de7a006236eb15d1118337ea2f74c[m
+Author: Deborah Kurata <deborahk@insteptech.com>
+Date:   Wed Aug 14 20:16:57 2019 -0700
+
+    Update to Angular v8
+
+[33mcommit d582bea97183d03aa8efbbdee976a33f571e2f57[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Mon Jul 29 15:26:05 2019 -0700
+
+    Update links.md
+
+[33mcommit cc87cde41e262d794e2ba4d203b169badb0af5a3[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:38:08 2019 -0700
+
+    Update links.md
+
+[33mcommit 71fe48d29e4138af49b86c752cda4df313d9127f[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:37:21 2019 -0700
+
+    Update links.md
+
+[33mcommit 88fb726c2178902d44c65f0f16c676678923e536[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:37:04 2019 -0700
+
+    Update links.md
+
+[33mcommit c45e4b3f85f58c91eefdb9624ba767c7ee7de5f0[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:36:44 2019 -0700
+
+    Update links.md
+
+[33mcommit 7da87d4bec3e909b9267051845f05f06cfaa9e60[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:35:59 2019 -0700
+
+    Update links.md
+
+[33mcommit f6237cd6b02982f98f8b7832012421e9eb11096c[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Mar 12 11:21:18 2019 -0700
+
+    Create links.md
+
+[33mcommit bbaec63c3a5d2f05966c35bfdab6f29d01b47ea5[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Mon Feb 18 10:03:53 2019 -0800
+
+    Update README.md
+
+[33mcommit f87fd542258b37443265b2a5dc7f5663710bb9f1[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Tue Jan 29 09:38:51 2019 -0800
+
+    Add import required for Stackblitz.
+
+[33mcommit 526c43e927f01e9c88afdfdc9b151f02d1178f2c[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Sat Dec 29 13:23:07 2018 -0800
+
+    Add import required for Stackblitz.
+
+[33mcommit 02d54d19401762c8b4558ec3a96f638d9e94a964[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Wed Dec 5 10:22:46 2018 -0800
+
+    Update CHANGELOG.md
+
+[33mcommit d57a568ab1f6fa482d3872a033b4bef68d6b2427[m
+Author: Deborah Kurata <DeborahK@users.noreply.github.com>
+Date:   Thu Nov 8 15:00:56 2018 -0800
+
+    Update README.md
+
+[33mcommit 74c9c2d4bf8fe5af246361b44835d8fc3d927841[m
+Author: Deborah Kurata <deborahk@insteptech.com>
+Date:   Thu N
