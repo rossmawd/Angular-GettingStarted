@@ -6,6 +6,8 @@ templateUrl: './star.component.html',
 styleUrls: ['./star.component.css']
 })
 export class StarComponent implements OnChanges {
+    //think of the input and ouput properties as the public API of the nested 
+    //component
    @Input() rating: number;
     starWidth: number = 75;
     @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
