@@ -11,7 +11,8 @@ import { fromEventPattern } from 'rxjs';
 // the Angular cli automatically imports this stuff for you
 import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
-import {RouterModule} from '@angular/router'
+import {RouterModule} from '@angular/router';
+import { ImagesComponent } from './ross/images/images.component'
 
 @NgModule({
   declarations: [
@@ -20,14 +21,22 @@ import {RouterModule} from '@angular/router'
     ConvertToSpacesPipe,
     StarComponent,
     ProductDetailComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ImagesComponent
   ],
   imports: [
  
 BrowserModule,
   FormsModule,
   HttpClientModule,
-  RouterModule
+  RouterModule.forRoot([
+    {path: 'products', component: ProductListComponent},
+    {path: 'products/:id', component: ProductDetailComponent},
+    {path: 'welcome', component: WelcomeComponent},
+    {path: 'images', component: ImagesComponent},
+    {path: '', redirectTo: 'welcome', pathMatch: 'full'},
+    {path: '**', redirectTo: 'welcome', pathMatch: 'full'}
+  ])
   ],
   bootstrap: [AppComponent]
 })
