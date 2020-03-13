@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
-import {ActivatedRoute} from '@angular/router'
+import {ActivatedRoute, Router} from '@angular/router'
+
 
 @Component({
   // selector: 'pm-product-detail', NOT required as we'll be routing to this 
@@ -11,7 +12,8 @@ export class ProductDetailComponent implements OnInit {
   pageTitle: string = 'Product Detail'
   product: IProduct;
 
-  constructor(private route: ActivatedRoute) {} 
+  //each paramater has given us an instance of a service (Router, &ActivRoute)
+  constructor(private route: ActivatedRoute, private router: Router) {} 
 
   ngOnInit() {
     let id = +this.route.snapshot.paramMap.get('id')
@@ -26,6 +28,12 @@ export class ProductDetailComponent implements OnInit {
       "starRating": 3.2,
       "imageUrl": "assets/images/leaf_rake.png"
     }
+  }
+
+// like the routerLink directive, navigate can have a second element in the array
+//that adds a paramater onto the url
+  onBack(): void {
+    this.router.navigate(['/products'])
   }
 
 }
