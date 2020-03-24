@@ -13,6 +13,7 @@ import { ProductDetailComponent } from "./products/product-detail.component";
 import { WelcomeComponent } from "./home/welcome.component";
 import { RouterModule } from "@angular/router";
 import { ImagesComponent } from "./ross/images/images.component";
+import { ProductDetailGuard } from "./products/product-detail.guard";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,11 @@ import { ImagesComponent } from "./ross/images/images.component";
     HttpClientModule,
     RouterModule.forRoot([
       { path: "products", component: ProductListComponent },
-      { path: "products/:id", component: ProductDetailComponent },
+      {
+        path: "products/:id",
+        component: ProductDetailComponent,
+        canActivate: [ProductDetailGuard] //route must pass this guard (retuns T/F)
+      },
       { path: "welcome", component: WelcomeComponent },
       { path: "images", component: ImagesComponent },
       { path: "", redirectTo: "welcome", pathMatch: "full" },

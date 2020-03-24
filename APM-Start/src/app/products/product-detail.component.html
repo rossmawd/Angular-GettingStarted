@@ -1,7 +1,51 @@
 
-<div class="card" *ngIf="product">
+<div class="card" *ngIf="selectedProduct">
   <div class="card-header">
-      {{pageTitle + ': ' + product?.productName}}
+      {{pageTitle + ': ' + selectedProduct.productName}}
+  </div>
+  <div class="card-footer">
+
+
+    <button class="btn btn-secondary"
+    (click) = 'onBack()'
+    style="width:80px"
+    >
+    <i class="fa fa-chevron-left"></i> Back
+      
+    </button>
+    
+ 
+    <ul class="list-group">
+      <li class="list-group-item">
+        <img 
+        class="img-fluid" 
+        alt='responsive image' 
+        src={{selectedProduct.imageUrl}}
+        [style.width.px]='imageWidth'
+        [style.margin.px] ='imageMargin'
+        />
+      </li>
+      <li class="list-group-item">{{selectedProduct.productCode}}</li>
+      <li class="list-group-item">{{selectedProduct.releaseDate}}</li>
+      <li class="list-group-item">{{selectedProduct.description}}</li>
+      <li class="list-group-item">{{selectedProduct.price | currency : 'GBP'}}</li>
+      <li class="list-group-item">  <pm-star 
+        rating = {{selectedProduct.starRating}}
+         ></pm-star></li>
+ 
+    </ul>
+  
   </div>
 </div>
 
+<!-- 
+this.product = {
+  "productId": id,
+  "productName": "Leaf Rake",
+  "productCode": "GDN-0011",
+  "releaseDate": "March 19, 2019",
+  "description": "Leaf rake with 48-inch wooden handle.",
+  "price": 19.95,
+  "starRating": 3.2,
+  "imageUrl": "assets/images/leaf_rake.png"
+} -->

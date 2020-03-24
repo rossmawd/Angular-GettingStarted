@@ -7,16 +7,17 @@ import { ProductService } from "./product.service";
   templateUrl: "./product-list.component.html",
   styleUrls: ["./product-list.component.css"]
 })
-
 export class ProductListComponent implements OnInit {
   pageTitle: string = "Amazon";
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
   filteredProducts: IProduct[]; //declaring a new array for the filtered products
-  // listFilter: string = 'cart';
   _listFilter: string;
   errorMessage: string;
+
+  //could be 'public' or 'protected' as well
+  constructor(private productService: ProductService) {}
 
   get listFilter(): string {
     return this._listFilter;
@@ -50,20 +51,14 @@ export class ProductListComponent implements OnInit {
     this.pageTitle = message;
   }
 
-  //could be 'public' or 'protected' as well
-  constructor(private productService: ProductService) {}
-
-  //The place to make any API calls
   ngOnInit(): void {
     this.productService.getProducts().subscribe({
       next: products => {
-        this.products = products  
+        this.products = products;
         this.filteredProducts = this.products; //if outside this products are empty when this line is exec
-      
       },
-      error: err => this.errorMessage = err
+      error: err => (this.errorMessage = err)
     });
-  
     console.log("In ONInit");
   }
 
