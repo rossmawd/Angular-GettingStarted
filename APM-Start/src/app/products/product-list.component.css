@@ -2,7 +2,25 @@
     color:green;
 }
 
+/*
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
-_::-webkit-full-page-media, _:future, :root .header {
-  font-size: xx-large;
-}
+    .header {
+
+        color:#0000FF;
+        background-color:#CCCCCC;
+
+    }
+}} */
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .header {
+
+        color:#0000FF;
+        background-color:#CCCCCC;
+
+    }
+}}
