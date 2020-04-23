@@ -60,6 +60,7 @@ export class ProductListComponent implements OnInit {
       error: err => (this.errorMessage = err)
     });
     console.log("In ONInit");
+
   }
 
   toggleImage(): void {
